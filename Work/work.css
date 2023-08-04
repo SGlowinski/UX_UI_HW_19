@@ -1,0 +1,104 @@
+h1{
+    text-align: center;
+}
+h3 {
+    font-size: 26px;
+    line-height: 32px;
+    color: white;
+    font-family: inter,sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+    
+.mySkills-box1 {
+    background-color: #084C61;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.375rem;
+    
+}
+.mySkills-box1 p{
+    color: white;
+}
+.mySkills-box1-row1{
+display: flex;
+}
+.mySkills-box1-row2{
+    padding: 1rem;
+}
+.mySkills-box1-row3{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 600px;
+
+}
+
+.mySkills-box2 {
+    display: flex;
+    background-color: #022631;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.375rem;
+}
+.mySkills-box2 p{
+    color: white;
+}
+.mySkills-box2-row1{
+display: flex;
+}
+.mySkills-box2-row2{
+    padding: 1rem;
+}
+.mySkills-box2-row3{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 600px;
+}
+
+.mySkills-box3 {
+    background-color: #084C61;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.375rem;
+}
+.mySkills-box3 p{
+    color: white;
+}
+.mySkills-box3-row1{
+display: flex;
+}
+.mySkills-box3-row2{
+    padding: 1rem;
+}
+.mySkills-box3-row3{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 600px;
+}
+
+@media (min-width: 640px) {
+    .card {
+      grid-column: span 12 / span 12;
+      height: 23rem;
+    }
+  }
+  
+  /*Medium reakpoints*/
+  @media (min-width: 768px) {
+  }
+  
+  /*Large breakpoints*/
+  @media (min-width: 1024px) {
+    .card {
+      grid-column: span 12 / span 12;
+      height: 23rem;
+    }
+  }

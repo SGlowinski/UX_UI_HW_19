@@ -1,0 +1,18 @@
+.mySkills {
+    width: 100%;
+    padding: 60px 0px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+}
+.programing_language {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+}
+.user_research{
+    height: 30
+}
+.interactive_design{
+
+}
