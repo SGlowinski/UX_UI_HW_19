@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <Html>
+
 <head>
     <title>Glowinski Portfolio</title>
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <link href="/js/index.js" rel="jQuery" />
+    <script src="jquery-3.6.4.js"></script>
 </head>
 
 <body style="background-color: #084C61">
@@ -10,15 +14,47 @@
     <section class="header">
         <a class="logo" href="/GitHub/UX_UI_HW_17/images/Logo with Name.png" alt="logo"></a>
         <img src="./images/Logo with Name.png">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="#">About</a></li>
-                <li><a href="./My_Skills/my_skills.html">Skills</a></li>
-                <li><a href="./Work/work.html">Work</a></li>
-            </ul>
-        </nav>
-        <a class="cta" href="#">Contact</a>
+
+
     </section>
+    <div class="wrapper">
+        <div class="navigationDesktop">
+            <nav>
+                <ul>
+                    <li><a href="#">Programming</a>
+                        <ul>
+                            <li><a href="#">C++</a></li>
+                            <li><a href="#">C#</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">Web Development</a>
+                                <ul>
+                                    <li><a href="#">Javascript</a></li>
+                                    <li><a href="#">PHP</a></li>
+                                    <li><a href="#">Ruby</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Python</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">OS</a>
+                        <ul>
+                            <li><a href="#">Windows</a></li>
+                            <li><a href="#">Macintosh</a></li>
+                            <li><a href="#">Linux</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Projects</a>
+                        <ul>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">iOS</a></li>
+                            <li><a href="#">Web</a></li>
+                            <li><a href="#">Windows</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
 
     <div class="heroImg">
         <div class="cards">
@@ -30,10 +66,10 @@
                     <h2>UX Designer</h2>
                 </div>
                 <div class="card-row3">
-                    <p>As a former teacher turned UX Designer,I leverage my background in education and passion for
+                    <p>As a former teacher turned UX Designer, I leverage my background in education and passion for
                         people to create seamless and enjoyable digital experiences,combining my skills in user
                         research, information architecture, and interaction design to prioritize accessibility,
-                        inclusive design, and empathetic user experiences 
+                        inclusive design, and empathetic user experiences
                     </p>
                     <img src="./images/Glowinski.jpg" alt="Headshot" width="200" ; height="300" border-radius: 1rem;>
                 </div>
@@ -43,18 +79,13 @@
             </div>
         </div>
     </div>
-        <section class="footer">
-            <a class="logo" href="/GitHub/UX_UI_HW_17/images/Logo with Name.png" alt="footerLogo"></a>
-            <img src="./images/Logo with Name.png">
-            <nav>
-                <ul class="navbar">
-                    <li><a href="#">About</a></li>
-                    <li><a href="./My_Skills/my_skills.html">Skills</a></li>
-                    <li><a href="./Work/work.html">Work</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
+
+    <div class="clear"></div>
+
+    <section class="footer">
+        <a class="logo" href="/GitHub/UX_UI_HW_17/images/Logo with Name.png" alt="footerLogo"></a>
+        <img src="./images/Logo with Name.png">
+    </section>
 </body>
 
 </Html>
