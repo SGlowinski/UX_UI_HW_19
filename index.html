@@ -7,6 +7,35 @@
     <meta charset="utf-8">
     <link href="/js/index.js" rel="jQuery" />
     <script src="jquery-3.6.4.js"></script>
+    <link type="text/css" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script>
+        $(function () {
+            $('h3').each(function (index, el) {
+                el = $(el);
+                var id = 'link-' + index;
+                el.attr('id', id);
+                var listEl = $('<a/>').html(el.html());
+                listEl.attr('href', '#' + id);
+                $('.sidebar').append(listEl);
+
+                if (el.next().is('table')) {
+                    var table = el.next();
+                    table.find('th').each(function (index, th) {
+                        th = $(th);
+                        var id2 = id + '-' + index;
+                        th.attr('id', id2);
+
+                        var listEl2 = $('<a/>').html(th.text()).addClass('level-2');
+                        listEl2.attr('href', '#' + id2);
+                        $('.sidebar').append(listEl2);
+                    });
+                }
+            });
+        });
+    </script>
 </head>
 
 <body style="background-color: #084C61">
@@ -14,78 +43,69 @@
     <section class="header">
         <a class="logo" href="/GitHub/UX_UI_HW_17/images/Logo with Name.png" alt="logo"></a>
         <img src="./images/Logo with Name.png">
-
-
     </section>
     <div class="wrapper">
         <div class="navigationDesktop">
             <nav>
                 <ul>
-                    <li><a href="#">Programming</a>
+                    <li><a href="My_Skills/my_skills.html">Skills</a>
                         <ul>
-                            <li><a href="#">C++</a></li>
-                            <li><a href="#">C#</a></li>
-                            <li><a href="#">Java</a></li>
-                            <li><a href="#">Web Development</a>
+                            <li><a href="#">User Research</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Prototyping</a></li>
+                            <li><a href="#">Coding</a>
                                 <ul>
-                                    <li><a href="#">Javascript</a></li>
-                                    <li><a href="#">PHP</a></li>
-                                    <li><a href="#">Ruby</a></li>
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">jQuery</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Data Analysis</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">OS</a>
+                    <li><a href="#">About</a>
                         <ul>
-                            <li><a href="#">Windows</a></li>
-                            <li><a href="#">Macintosh</a></li>
-                            <li><a href="#">Linux</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Background</a></li>
+                            <li><a href="#">Resume</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Projects</a>
+                    <li><a href="Work/work.html">Case Studies</a>
                         <ul>
-                            <li><a href="#">Android</a></li>
-                            <li><a href="#">iOS</a></li>
-                            <li><a href="#">Web</a></li>
-                            <li><a href="#">Windows</a></li>
+                            <li><a href="#">Ed.Gov</a></li>
+                            <li><a href="#">WannaDo</a></li>
+                            <li><a href="#">Case Study #3</a></li>
+                            <li><a href="#">Case Study #4</a></li>
                         </ul>
                     </li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
-
-    <div class="heroImg">
-        <div class="cards">
-            <div class="card">
-                <div class="card-row1">
-                    <h1> Sam Glowinski</h1>
-                </div>
-                <div class="card-row2">
-                    <h2>UX Designer</h2>
-                </div>
-                <div class="card-row3">
-                    <p>As a former teacher turned UX Designer, I leverage my background in education and passion for
-                        people to create seamless and enjoyable digital experiences,combining my skills in user
-                        research, information architecture, and interaction design to prioritize accessibility,
-                        inclusive design, and empathetic user experiences
-                    </p>
-                    <img src="./images/Glowinski.jpg" alt="Headshot" width="200" ; height="300" border-radius: 1rem;>
-                </div>
-                <div class="card-row4">
-                    <button>Download Resume</button>
-                </div>
+        <section class="hero">
+            <div class="hero-inner">
+                <h1>Empowering Today's Users</h1>
+                <h2>Envisioning Tomorrow's Possibilities</h2>
             </div>
+        </section>
+        <main>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec nibh molestie, efficitur leo sed, viverra nunc. Donec vehicula accumsan erat facilisis ullamcorper. Donec commodo quis dui nec placerat. Donec mi orci, scelerisque eget nisl ac, hendrerit condimentum odio. Nam dictum odio eget quam tempus, a mattis odio ornare. Nullam auctor libero ut libero suscipit, ut accumsan nunc condimentum. Donec ullamcorper maximus sapien quis egestas.</p> <br>
+    
+            <p>Mauris viverra scelerisque lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ultrices enim sit amet elit tincidunt maximus. Suspendisse vitae pellentesque lectus. Duis commodo leo suscipit augue mollis, non venenatis dolor ullamcorper. Duis tincidunt scelerisque lacus, vel vehicula leo consectetur vel. Duis posuere nisl non odio consequat ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <br>
+            
+            <p>Etiam a leo nec mi blandit euismod. Etiam fringilla odio vitae risus ornare, id bibendum velit consequat. Fusce posuere risus sollicitudin condimentum ultrices. Fusce gravida, purus eget laoreet mattis, velit sapien ultrices diam, id dapibus erat leo id quam. Maecenas quis risus convallis, placerat elit non, iaculis tortor. Nullam porttitor magna risus, quis bibendum metus tincidunt in. Etiam vel ligula ac risus mattis tincidunt vel sit amet ante. Morbi et viverra ligula. Ut ac dignissim nisi, condimentum imperdiet mauris. Pellentesque ut ipsum vel diam tristique faucibus eu et lectus. Maecenas posuere neque non lacus bibendum, sit amet pharetra justo semper. Sed mi risus, tempor sit amet ligula eget, varius pretium est. Sed a odio in orci accumsan pretium suscipit ut quam.</p>
+        </main>
         </div>
-    </div>
+        <div id="share-bar"></div>
+        <div class="clear"></div>
 
-    <div class="clear"></div>
-
-    <section class="footer">
-        <a class="logo" href="/GitHub/UX_UI_HW_17/images/Logo with Name.png" alt="footerLogo"></a>
-        <img src="./images/Logo with Name.png">
-    </section>
+        <section class="footer">
+            <a class="logo" href="/GitHub/UX_UI_HW_17/images/Logo with Name.png" alt="footerLogo"></a>
+            <img src="./images/Logo with Name.png">
+        </section>
+        <script>
+            $('#share-bar').share();
+        </script>
 </body>
 
 </Html>
