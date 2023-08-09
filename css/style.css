@@ -121,7 +121,7 @@ nav ul ul li:hover ul {
 
 body{
   margin: 0;
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .hero{
@@ -143,6 +143,7 @@ body{
   margin-top: 0%;
   margin-bottom: .5em;
 }
+
 .clear {
   height: 100px;
 }
@@ -152,38 +153,6 @@ body{
   padding: 30px;
   background-color: #eeee;
   width: 100%;
-}
-
-.navbar {
-  list-style: none;
-}
-
-.navbar li {
-  display: inline-block;
-}
-
-.navbar a {
-  color: #084C61;
-  text-align: center;
-  padding: 30px 16px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.navbar a {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  color: #084C61;
-  text-decoration: none;
-}
-
-.navbar li a {
-  transition: all 0.3s ease 0s;
-}
-
-.navbar li a:hover {
-  color: #0088a9;
 }
 
 #share-bar {
@@ -268,11 +237,6 @@ body{
 
 .sharing-providers>li.facebook:hover {
   background: #4267B2;
-
-}
-
-.sharing-providers>li.googleplus:hover {
-  background: #d14836;
 }
 
 .sharing-providers>li.twitter:hover {
@@ -281,30 +245,6 @@ body{
 
 .sharing-providers>li.linkedin:hover {
   background: #0077B5;
-}
-
-.sharing-providers>li.tumblr:hover {
-  background: #2c4762;
-}
-
-.sharing-providers>li.digg:hover {
-  background: #333333;
-}
-
-.sharing-providers>li.reddit:hover {
-  background: #FF4500;
-}
-
-.sharing-providers>li.pinterest:hover {
-  background: #E60023;
-}
-
-.sharing-providers>li.stumbleupon:hover {
-  background: #EB4924;
-}
-
-.sharing-providers>li.email:hover {
-  background: #E3A129;
 }
 
 @media (max-width: 680px) {
